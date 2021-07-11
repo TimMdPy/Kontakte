@@ -26,6 +26,9 @@
                                 <rect key="frame" x="378" y="38" width="30" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="addButton_Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dC0-GG-mvl"/>
+                                </connections>
                             </button>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="yad-7B-JWZ">
                                 <rect key="frame" x="0.0" y="79" width="428" height="51"/>
@@ -60,6 +63,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="0Kv-My-C2e"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Gvy-Fi-8Oe"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -79,6 +86,10 @@
                             <constraint firstItem="ehj-we-Ctz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="zPW-LQ-XTl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contactsTableView" destination="Xig-uS-qEn" id="QiE-op-KBg"/>
+                        <outlet property="searchBarTextField" destination="yad-7B-JWZ" id="FMC-Mv-NSz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

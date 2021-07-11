@@ -7,13 +7,23 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
+    
+    // MARK: - Outlets
+    @IBOutlet weak var searchBarTextField: UISearchBar!
+    @IBOutlet weak var contactsTableView: UITableView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    
+    // MARK: - Actions
+    @IBAction func addButton_Tapped(_ sender: UIButton) {
+    }
+    
 }
 
