@@ -15,6 +15,7 @@
 		F7BA013D269AD3DE0092BB4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7BA013C269AD3DE0092BB4C /* Assets.xcassets */; };
 		F7BA0140269AD3DE0092BB4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7BA013E269AD3DE0092BB4C /* LaunchScreen.storyboard */; };
 		F7BA0149269AD5180092BB4C /* Contact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BA0147269AD5180092BB4C /* Contact+CoreDataClass.swift */; };
+		F7BA014D269AE99A0092BB4C /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BA014C269AE99A0092BB4C /* AddContactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F7BA013F269AD3DE0092BB4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7BA0141269AD3DE0092BB4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7BA0147269AD5180092BB4C /* Contact+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F7BA014C269AE99A0092BB4C /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				F7BA0132269AD3DC0092BB4C /* SceneDelegate.swift */,
 				F7BA0134269AD3DC0092BB4C /* ViewController.swift */,
 				F7BA0136269AD3DC0092BB4C /* Main.storyboard */,
+				F7BA014C269AE99A0092BB4C /* AddContactViewController.swift */,
 				F7BA013C269AD3DE0092BB4C /* Assets.xcassets */,
 				F7BA013E269AD3DE0092BB4C /* LaunchScreen.storyboard */,
 				F7BA0141269AD3DE0092BB4C /* Info.plist */,
@@ -154,6 +157,7 @@
 				F7BA013B269AD3DC0092BB4C /* Contact.xcdatamodeld in Sources */,
 				F7BA0135269AD3DC0092BB4C /* ViewController.swift in Sources */,
 				F7BA0131269AD3DC0092BB4C /* AppDelegate.swift in Sources */,
+				F7BA014D269AE99A0092BB4C /* AddContactViewController.swift in Sources */,
 				F7BA0133269AD3DC0092BB4C /* SceneDelegate.swift in Sources */,
 				F7BA0149269AD5180092BB4C /* Contact+CoreDataClass.swift in Sources */,
 			);

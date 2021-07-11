@@ -96,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="33.644859813084111" y="93.952483801295898"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Contact View Controller-->
         <scene sceneID="hwg-4T-zrN">
             <objects>
-                <viewController id="2dM-bs-dKk" sceneMemberID="viewController">
+                <viewController id="2dM-bs-dKk" customClass="AddContactViewController" customModule="Contact" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iRD-pg-h52">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
