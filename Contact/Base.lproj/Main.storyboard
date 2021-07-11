@@ -89,14 +89,97 @@
                     <connections>
                         <outlet property="contactsTableView" destination="Xig-uS-qEn" id="QiE-op-KBg"/>
                         <outlet property="searchBarTextField" destination="yad-7B-JWZ" id="FMC-Mv-NSz"/>
+                        <segue destination="2dM-bs-dKk" kind="presentation" identifier="goToAddContactScreen" id="uP5-Fe-399"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="33.644859813084111" y="93.952483801295898"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="hwg-4T-zrN">
+            <objects>
+                <viewController id="2dM-bs-dKk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iRD-pg-h52">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neuer Kontakt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1a0-tI-g7E">
+                                <rect key="frame" x="156.33333333333334" y="24" width="115.33333333333334" height="21.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17i-KF-gr1">
+                                <rect key="frame" x="20" y="17" width="89" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Abbrechen"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOz-Oy-foh">
+                                <rect key="frame" x="361" y="17" width="47" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Fertig"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="person.crop.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="PIT-qt-fWl">
+                                <rect key="frame" x="124" y="96.666666666666671" width="180" height="178.66666666666669"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="1Cm-Km-tAa"/>
+                                    <constraint firstAttribute="height" constant="180" id="76Y-cb-nFX"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Caf-k8-toC">
+                                <rect key="frame" x="158" y="280.66666666666669" width="112" height="30"/>
+                                <state key="normal" title="Foto hinzufügen"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="DVt-YP-K16">
+                                <rect key="frame" x="20" y="350.66666666666669" width="388" height="140"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vorname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wk6-8P-mzp">
+                                        <rect key="frame" x="0.0" y="0.0" width="388" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nachnahme" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bMm-Sh-RM0">
+                                        <rect key="frame" x="0.0" y="53" width="388" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telefonnummer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dJa-9W-n3e">
+                                        <rect key="frame" x="0.0" y="106" width="388" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YaA-hD-c1i"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1a0-tI-g7E" firstAttribute="top" secondItem="YaA-hD-c1i" secondAttribute="top" constant="24" id="1jt-Lp-hvx"/>
+                            <constraint firstItem="17i-KF-gr1" firstAttribute="top" secondItem="YaA-hD-c1i" secondAttribute="top" constant="17" id="DYU-SK-bqW"/>
+                            <constraint firstItem="YaA-hD-c1i" firstAttribute="trailing" secondItem="DVt-YP-K16" secondAttribute="trailing" constant="20" id="Gc1-cB-jqa"/>
+                            <constraint firstItem="DVt-YP-K16" firstAttribute="top" secondItem="Caf-k8-toC" secondAttribute="bottom" constant="40" id="Nbl-fK-n1W"/>
+                            <constraint firstItem="PIT-qt-fWl" firstAttribute="top" secondItem="1a0-tI-g7E" secondAttribute="bottom" constant="50" id="QoA-So-q8I"/>
+                            <constraint firstItem="Caf-k8-toC" firstAttribute="centerX" secondItem="iRD-pg-h52" secondAttribute="centerX" id="TyL-dm-k1A"/>
+                            <constraint firstItem="YaA-hD-c1i" firstAttribute="trailing" secondItem="lOz-Oy-foh" secondAttribute="trailing" constant="20" id="Yt7-bP-zKg"/>
+                            <constraint firstItem="DVt-YP-K16" firstAttribute="leading" secondItem="YaA-hD-c1i" secondAttribute="leading" constant="20" id="agJ-vB-Gvc"/>
+                            <constraint firstItem="DVt-YP-K16" firstAttribute="centerX" secondItem="iRD-pg-h52" secondAttribute="centerX" id="bxO-gz-wTv"/>
+                            <constraint firstItem="1a0-tI-g7E" firstAttribute="centerX" secondItem="iRD-pg-h52" secondAttribute="centerX" id="eCk-aI-oCk"/>
+                            <constraint firstItem="PIT-qt-fWl" firstAttribute="centerX" secondItem="iRD-pg-h52" secondAttribute="centerX" id="fHs-xx-yYe"/>
+                            <constraint firstItem="lOz-Oy-foh" firstAttribute="top" secondItem="YaA-hD-c1i" secondAttribute="top" constant="17" id="jcA-Yh-TMM"/>
+                            <constraint firstItem="17i-KF-gr1" firstAttribute="leading" secondItem="YaA-hD-c1i" secondAttribute="leading" constant="20" id="jgX-hW-CSZ"/>
+                            <constraint firstItem="Caf-k8-toC" firstAttribute="top" secondItem="PIT-qt-fWl" secondAttribute="bottom" constant="5" id="nDg-4L-zb1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dyd-qu-eCh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aJv-2A-PI8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773.83177570093449" y="93.952483801295898"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
