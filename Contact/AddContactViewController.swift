@@ -22,6 +22,12 @@ class AddContactViewController: UIViewController {
         
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        firstNameTextField.endEditing(true)
+        lastNameTextField.endEditing(true)
+        phoneNumberTextField.endEditing(true)
+    }
+    
     
     // MARK: - Actions
     @IBAction func cancelButton_Tapped(_ sender: UIButton) {
